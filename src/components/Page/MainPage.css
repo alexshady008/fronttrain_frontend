@@ -1,0 +1,28 @@
+.suscription {
+    background-color: #FF6666;
+}
+.suscription--container .form--container {
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.suscription--container .form--container  input{
+    margin: 10px;
+  min-width: 300px;
+  min-height: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+
+
+.form--container{
+  align-items: center;
+}
+
+.login--password  button{
+  margin: 10px;
+  background-color: #FF6666 ;
+}

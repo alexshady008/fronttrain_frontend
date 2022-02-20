@@ -1,23 +1,53 @@
-/* .main-container {
-    background-color: blue;
+ h2{
+     text-align: center;
+     font-size: 22px;
+     padding:5px;
+     color: rgb(42, 42, 42);
+ }
+.section--container{
+    text-align: center;
+    /* background-color: #91c518; */
 }
 
-.section--container {
-    background-color: blueviolet;
+button{
+    background-color: #25D366;
+    border: none;
+    min-height: 35px;
+    min-width: 150px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.productFilter {
-    background-color: rgb(255, 80, 80);
+.form--container{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-h2 {
-
+ .form--container input , select {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 12px;
+    min-width: 280px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(161, 158, 158);
+    background-color: rgb(255, 254, 254);
 }
 
-.inner--container {
-    background-color: chocolate;
+ .form--container label{
+    font-weight: 600;
+    font-size: 17px;
+    
 }
+.form--input-message {
+    min-height: 250px !important;
+ }
 
-.form--container {
-    background-color: rgb(30, 174, 210);
-} */
+ h1{
+     text-align: center;
+ }
