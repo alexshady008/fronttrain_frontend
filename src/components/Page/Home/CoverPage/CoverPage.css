@@ -1,0 +1,7 @@
+.coverPage--container{
+   background-image: url('../../../../../public/assets/portada/portada-mobile.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+}
