@@ -52,3 +52,9 @@ button{
  h1{
      text-align: center;
  }
+
+ p{
+     color: rgb(61, 60, 60);
+     font-weight: 600;
+ }
+
