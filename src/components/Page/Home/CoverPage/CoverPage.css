@@ -1,7 +1,25 @@
 .coverPage--container{
    background-image: url('../../../../../public/assets/portada/portada-mobile.jpg');
-   background-repeat: no-repeat;
-   background-position: center;
+   margin:10px auto;
+   padding:13px;
+   width: 100vw;
+   height: 50vh;
+   /* background-size: 100% 100%; */
+   background-repeat:no-repeat;
    background-size: cover;
-   height: 100%;
+   position: relative;
+}
+
+.coverPage--title{
+   color:rgb(255, 255, 255)
+}
+
+.coverPage--wsp {
+   position: absolute;
+   background-color: black;
+
+ text-align: center;
+   color: aliceblue !important;
+   bottom: -1vh;
+   left: 12vh;
 }

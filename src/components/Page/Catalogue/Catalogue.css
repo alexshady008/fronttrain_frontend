@@ -41,3 +41,21 @@
 .productFilter--container .form--container  button{
     margin:10px
 }
+
+/* Pdf */
+
+
+.listPrices--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list--container{
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px;
+    border-radius: 8%;
+  
+}
+
+
