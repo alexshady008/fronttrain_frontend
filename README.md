@@ -1,4 +1,4 @@
-# Front Train, Distribuidora de Tren delantero - Single Pago Aplication
+# Front Train, Distribuidora de Tren delantero - Single Page Aplication
 
 ## Tecnologías
 Este proyecto es una SPA de la distribuidora Front Train desarrollada en React y utilizando las siguientes tecnologías: 
