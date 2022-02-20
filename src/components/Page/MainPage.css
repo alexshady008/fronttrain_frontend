@@ -48,3 +48,24 @@
   border-top-left-radius: 10%;
 border-top-right-radius: 10%;
 }
+
+.banner {
+  background-image: url('../../../public/assets/banners/banner1.jpg');
+  margin:10px auto;
+  padding:13px;
+  /* height: 82vh; */
+  height: 45vh;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner--title{
+  position: absolute;
+  text-align: center;
+  top: 20vh;
+  font-size: 25px;
+  color: #fff;
+}
+/* hasta 700px quedan bien */
