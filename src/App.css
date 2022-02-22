@@ -11,8 +11,6 @@
  }
 .section--container{
     text-align: center;
-    /* background-color: #91c518; */
-
 }
 
 button{
@@ -62,4 +60,3 @@ button{
      color: rgb(61, 60, 60);
      font-weight: 600;
  }
-

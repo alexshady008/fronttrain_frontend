@@ -8,9 +8,10 @@ const CoverPage = ({title, buttonText}) => {
 
     return (
         <div className='coverPage--container'>
-            {/* <div className='coverPage--img'></div> */}
+            <div className='coverPage--img'>
             <h1 className='coverPage--title'>{title}</h1>
             <a href={redirectToWhatsapp} className='coverPage--wsp button--wsp' > {buttonText} </a>
+            </div>
         </div>
     )
 }
