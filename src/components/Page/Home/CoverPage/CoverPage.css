@@ -1,0 +1,45 @@
+.coverPage--container{
+   background-image: url('../../../../../public/assets/portada/portada-mobile.jpg');
+   margin:auto;
+   top: -10px;
+   padding:13px;
+   width: 95vw;
+   max-width: fit-content;
+   height: 45vh;
+   background-repeat:no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.coverPage--title{
+   color:rgb(255, 255, 255)
+}
+
+.coverPage--wsp {
+   top:96%;
+   left:26%;
+   height:5%;
+   width:49%;
+   text-align: center;
+   font-size: 12pt;
+   font-weight: bold;
+   padding: 4px;
+   background-color: #25D366;
+   position: absolute;
+   color: #ffffff !important;
+   text-decoration: none;
+   border-radius: 8px;
+}
+
+@media (min-width: 450px) {
+   .coverPage--container{
+      top: -10px;
+   padding:13px;
+   width: 98vw;
+   max-width: fit-content;
+   height: 60vh;
+   background-repeat:no-repeat;
+   background-size: cover;
+   position: relative;   
+   }
+}

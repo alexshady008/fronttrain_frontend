@@ -1,0 +1,22 @@
+.contact{
+   
+    margin: auto;
+
+}
+
+.contact--container{
+   
+    margin-bottom: 10px;
+}
+
+
+ 
+ .button--wsp-container{
+     margin: 10px;
+ }
+     .button--wsp{
+    /* background-color: #25D366; */
+    text-decoration: none;
+    color: rgb(56, 187, 23);
+;
+   }
