@@ -1,4 +1,4 @@
-.suscription {
+/* .suscription {
     background-color: #FF6666;
 }
 .suscription--container .form--container {
@@ -25,20 +25,23 @@
 .login--password  button{
   margin: 10px;
   background-color: #FF6666 ;
-}
+} */
 
 
 /* Categorias */
 .categories--container{
-  /* background-color: rgb(96, 147, 192); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
+.category-tittle{
+  margin-top: 20px;
+  font-size: 30px;
+}
+
 .category--container{
-   /* width: 70%; */
   background-color: rgb(255, 255, 255);
   margin: 10px;
   border-radius:10%;
@@ -53,8 +56,6 @@ border-top-right-radius: 10%;
 .banner {
   background-image: url('../../../public/assets/banners/banner1.jpg');
   margin:10px auto;
-  padding:13px;
-  /* height: 82vh; */
   height: 45vh;
   background-size: 100% 100%;
   background-repeat:no-repeat;
@@ -69,7 +70,26 @@ border-top-right-radius: 10%;
   font-size: 25px;
   color: #fff;
 }
-/* hasta 700px quedan bien */
+
+/* Media querie banner */
+@media (min-width: 650px) {
+  .banner--title{
+    font-size: 32px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 850px) {
+  .banner--title{
+    font-size: 40px;
+  }
+}
+
+  @media (min-width: 1200px) {
+    .banner--title{
+      font-size: 65px;
+    }
+}
 
 /* Description */
 .description{

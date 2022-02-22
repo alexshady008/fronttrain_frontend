@@ -1,18 +1,18 @@
 .coverPage--container{
-   background-image: url('../../../../../public/assets/portada/portada-mobile.jpg');
-   margin:auto;
+   background-image: url('../../../../../public/assets/portada/portada-tablet.jpg');
    top: -10px;
-   padding:13px;
-   width: 95vw;
-   max-width: fit-content;
+   margin: auto;
    height: 45vh;
+   background-size: 100% 100%;
    background-repeat:no-repeat;
    background-size: cover;
    position: relative;
 }
 
 .coverPage--title{
-   color:rgb(255, 255, 255)
+   color:rgb(255, 255, 255);
+
+    padding: 20px;
 }
 
 .coverPage--wsp {
@@ -38,6 +38,19 @@
    width: 98vw;
    max-width: fit-content;
    height: 60vh;
+   background-repeat:no-repeat;
+   background-size: cover;
+   position: relative;   
+   }
+}
+
+@media (min-width: 650px) {
+   .coverPage--container{
+      top: -10px;
+   padding:13px;
+   width: 100vw;
+   max-width: fit-content;
+   height: 65vh;
    background-repeat:no-repeat;
    background-size: cover;
    position: relative;   

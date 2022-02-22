@@ -4,7 +4,7 @@
  background-color: black;
  flex-wrap: wrap;
  flex-direction: column;
- width: 55%;
+ width: 65%;
  height: 48%;
  position: fixed;
  z-index: 100;
@@ -54,7 +54,7 @@
 
 .header--menu-button{
     top:60%;
-    left:82%;
+    left:65%;
     color:#fff;
     display:block;
     position: fixed;

@@ -9,7 +9,7 @@ const Categories = () => {
 
     return (
         <section className='section--container categories'>
-            <h2>Categorias</h2>
+            <h2 className='category-tittle'>Categorias</h2>
             <div className='categories--container inner--container'>
                 { categories.map( (category, index) => 
                     <Category 
