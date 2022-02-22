@@ -39,12 +39,14 @@ const ProductFilter = () => {
     const [brandType, setBrandType] = useState('')
     const [brandCar, setBrandCar] = useState('')
     const [carType, setCarType] = useState('')
+    const [cod, setCod] = useState('')
 
     const formValue = {
         categoryId: productType,
         productBrand: brandType,
         carBrand: brandCar,
-        carType: carType
+        carType: carType,
+        productCod: cod
     }
     //console.log(formValue)
 
@@ -52,7 +54,8 @@ const ProductFilter = () => {
         categoryId: Yup.number(),
         productBrand: Yup.string(),
         carBrand: Yup.string(),
-        carType: Yup.string()
+        carType: Yup.string(),
+        productCod: Yup.string()
     })
 
     const submit = () => {
@@ -107,7 +110,9 @@ const ProductFilter = () => {
                         </Select>
                         <InputText label='Nombre del auto' type='text' name='carType' value={carType}
                             onChange={ (e) => setCarType(e.target.value)} />
-                        <button type='submit' className='form--submit' >Buscar Productos</button>
+                        <InputText label='Código del producto' type='text' name='cod' value={cod}
+                            onChange={ (e) => setCod(e.target.value)} />
+                        <button type='submit' className='form--submit' >Buscar</button>
                     </Form>
                 </Formik>
             </div>

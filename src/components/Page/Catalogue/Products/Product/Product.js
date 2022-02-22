@@ -29,12 +29,14 @@ const Product = ({value}) => {
         <div className='product--container'>
             { value.image ? <img className='product--image' src={urlImage} alt='Repuesto' /> : 
             <img className='product--image' src='assets/photo_product_default.png' alt='Imagen Default' /> }
-            <p className='product--description' > Descripción:  {value.description} </p>
-            <p className='product--price' > Precio: {value.price} </p>
-            <p className='product--category' > Categoria: {value.categoryId} </p>
+            <p className='product--cod' > {value.cod} </p>
+            <p className='product--description' > {value.description} </p>
+            <p className='product--brand' > {value.productBrand} </p>
+            <p className='product--price' > {value.price} </p>
+            {/* <p className='product--category' > Categoria: {value.categoryId} </p>
             <p className='product--brand' > Marca:  {value.productBrand} </p>
             <p className='product--car-brand' > Auto:  {value.carBrand} </p>
-            <p className='product--car-type' > Tipo:  {value.carType} </p>
+            <p className='product--car-type' > Tipo:  {value.carType} </p> */}
             { (localStorage.getItem('session')) 
             ?   
                 <div> 

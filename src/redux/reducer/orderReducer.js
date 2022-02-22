@@ -37,15 +37,15 @@ const orderReducer = (state=initial_state, action) => {
 
         case ADD_PRODUCT: {
             return {
-                ...state,
-                productsList: [ ...state.productsList, action.payload ]
+                productsList: [ ...state.productsList, action.payload ],
+                orderProducts: false
             }
         }
 
         case UPDATE_QUANTITY_PRODUCT: {
             return {
-                ...state,
-                productsList: updateQuantityProduct(state.productsList, action.payload.id, action.payload.quantity)
+                productsList: updateQuantityProduct(state.productsList, action.payload.id, action.payload.quantity),
+                orderProducts: false
             }
         }
 

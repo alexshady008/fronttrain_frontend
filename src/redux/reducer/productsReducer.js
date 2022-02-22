@@ -2,7 +2,7 @@ import {PRODUCTS_FOUND, PRODUCTS_NOT_FOUND, PRODUCTS_UPDATE} from '../action/pro
 
 const initial_state= {
     productsList: [],
-    error: false
+    error: 'idle'
 }
 
 const productsReducer = (state=initial_state, action) => {
@@ -10,13 +10,13 @@ const productsReducer = (state=initial_state, action) => {
         case PRODUCTS_FOUND: {
             return {
                 productsList: action.payload,
-                error: false
+                error: initial_state.error
             }
         }
         case PRODUCTS_UPDATE: {
             return {
                 productsList: action.payload,
-                error: false
+                error: initial_state.error
             }
         }
         case PRODUCTS_NOT_FOUND: {

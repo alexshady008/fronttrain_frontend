@@ -8,6 +8,7 @@ import axios from 'axios'
 import config from '../../../config/config'
 
 
+
 const Contact = () => {
     const redirectToWhatsapp = `https://api.whatsapp.com/send/?phone=${config.numberAdmin}&text=Hola%2C+me+gustaria+hacerte+una+consulta`
     const url = `${config.urlServer}/auth/contact`
@@ -47,6 +48,7 @@ const Contact = () => {
         } 
     }
 
+
     return(
         <main className='main-container'>
             <section className='section--container contact'>
@@ -70,17 +72,17 @@ const Contact = () => {
                                 <option value='Otro' > Otro </option>
                             </Select>
                             <InputText name='message' type='text' label='Escriba el mensaje' className='form--input-message' />
-                            <button type='submit' className='form--submit'> Enviar Mensaje</button>
+                            <button type='submit' className='form--submit'> Enviar </button>
                         </Form>
                     </Formik>
                     <div className='msg--container' >
-                    { (fetchState=='error') && <p className='error--text'> ¡Ha ocurrido un error! </p> }
-                    { (fetchState=='loading') && <p className='msg--text'> Enviando... </p> }
-                    { (fetchState=='success') && <p className='msg--text'> ¡Mensaje enviado! </p> }
-                    <div className='button--wsp-container'>
-                        <a href={redirectToWhatsapp} className='button--wsp' > Enviarnos un Whatsapp </a>
+                        { (fetchState=='error') && <p className='error--text'> ¡Ha ocurrido un error! </p> }
+                        { (fetchState=='loading') && <p className='msg--text'> Enviando... </p> }
+                        { (fetchState=='success') && <p className='msg--text'> ¡Mensaje enviado! </p> }
+                        <div className='button--wsp-container'>
+                            <a href={redirectToWhatsapp} className='button--wsp' > Whatsapp </a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
         </main>
@@ -89,3 +91,6 @@ const Contact = () => {
 
 
 export default Contact
+
+
+

@@ -14,6 +14,7 @@ import config from '../../../../config/config'
 const createFormData = (values) => {
     const newForm = new FormData()
     if (values.id) newForm.append('id', values.id)
+    newForm.append('cod', values.cod)
     newForm.append('description', values.description)
     newForm.append('price', values.price)
     newForm.append('categoryId', values.categoryId)
@@ -60,17 +61,18 @@ const ProductFormAdd = () => {
     const inputFile = useRef(null)
     const dispatch = useDispatch()
     const {fetchState} = useSelector( state => state.fetch )
-    const token = useSelector( state => state.user.token )
+    //const token = useSelector( state => state.user.token )
+    const token = localStorage.getItem('token')
     const addproduct = useSelector( state => state.addProduct )
     const addProductType = addproduct.type
     const [values, setValues] = useState(addproduct.details)
-    const {id, description, price, categoryId, productBrand, carBrand, carType, image} = values
+    const {id, cod, description, price, categoryId, productBrand, carBrand, carType, image} = values
     // console.log('inputFile: ', image)
 
     
     useEffect( () => {
         dispatch( updateFormAction(values) )
-    }, [description, price, categoryId, productBrand, carBrand, carType, image] )
+    }, [cod, description, price, categoryId, productBrand, carBrand, carType, image] )
 
     useEffect( () => dispatch(fetchResetAction()), [] )
 
@@ -91,6 +93,8 @@ const ProductFormAdd = () => {
             <div className='productFormAdd--container inner--container' >
                 <Formik initialValues={values}  onSubmit={submit} >
                     <Form className='form--container'>
+                        <InputText name='cod' label='Código del producto' type='text' 
+                        value={cod} onChange={ (e) => setValues({...values, cod:e.target.value}) } />
                         <InputText name='description' label='Descripción del producto' type='text' 
                         value={description} onChange={ (e) => setValues({...values, description:e.target.value}) } />
                         <InputText name='price' label='Precio del producto' type='number' 
