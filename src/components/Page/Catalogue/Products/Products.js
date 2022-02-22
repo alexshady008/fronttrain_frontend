@@ -46,7 +46,7 @@ const Products =  () => {
         <section className='section--container products'>
             <h2>Listado de Productos</h2>
             <div className='products--container inner--container'>
-                { !productsError && 
+                { (productsError=='idle') && 
                     (productsList.map( product => <Product key={product.id} value={product} /> ) )
                 }    
                 { 

@@ -4,6 +4,7 @@ export const initial_value = {
     type: 'idle',
     details: {
         id: null,
+        cod: '',
         description: '',
         price: '',
         categoryId: '',

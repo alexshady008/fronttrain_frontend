@@ -46,6 +46,7 @@ const Product = ({value}) => {
         <div className='product--container'>
             { value.image ? <img src={urlImage} alt='Repuesto' /> : 
             <img src='assets/photo_product_default.png' alt='Imagen Default' /> }
+            <p className='product--description' > Codigo:  {value.cod} </p>
             <p className='product--description' > Descripción:  {value.description} </p>
             <p className='product--price' > Precio: {value.price} </p>
             <p className='product--category' > Categoria: {value.categoryId} </p>

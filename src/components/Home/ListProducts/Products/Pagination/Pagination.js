@@ -59,7 +59,7 @@ const Pagination = () => {
 
     return(
         <div className='product--pagination--container'>
-            <h3>Paginacion</h3>
+            {/* <h3>Paginacion</h3> */}
             <button className='pagination--arrow' onClick={leftPagination} > {'<'} </button>
             { (offset>0) && <button className='pagination--pageNumber' onClick={leftPagination} > {offset} </button> }
             <p className='pagination--pageNumber' > {offset+1} </p>
