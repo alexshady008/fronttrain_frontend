@@ -1,3 +1,13 @@
+/* Products */
+
+
+.products{
+    /* background-color: blue; */
+    margin: 10px;
+}
+
+
+/* Filter products */
 .productFilter{
  background-color: #FF6666;
  /* padding: 5px; */
@@ -38,24 +48,60 @@
 }
 
 
-.productFilter--container .form--container  button{
-    margin:10px
+.submit-catalogue{
+    margin:10px;
+    background-color: #25D366 !important;
+    
 }
 
 /* Pdf */
 
-
+.listPrices{
+    margin-bottom: 15px;
+}
 .listPrices--container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+   flex-wrap: wrap;
+
+
+    
 }
 
 .list--container{
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 10px;
-    border-radius: 8%;
-  
+margin: 10px;
+border-radius: 10%;   
+height: 100%;
 }
 
+.list--img-text img{
+    width: 80%;
 
+}
+.list--pdf{
+    background-color: rgb(184, 180, 180);
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color: #b8b8b8;
+    padding: 10px;
+   
+}
+
+.list--pdf a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.list--pdf a{
+    margin: 10px;
+}
+
+@media (min-width: 750px) {
+.catalogo-container{
+    margin-top: 100px;
+}
+}

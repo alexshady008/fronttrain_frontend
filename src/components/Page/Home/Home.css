@@ -1,0 +1,29 @@
+/* Categorias */
+.categories--container{
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+  }
+  
+  .category-tittle{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  
+  .category--container{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius:10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  
+  .category--img{
+    border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  width: 85%;
+  }
+  
+  .category--title{
+    margin-bottom: 8px;
+  }

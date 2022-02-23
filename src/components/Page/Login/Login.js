@@ -70,7 +70,7 @@ const Login = () => {
     }
 
     return (
-        <main className='main--container'>
+        <main className='main--container login-container'>
             <h1> Iniciar Sesion </h1>
             <section className='section--container login'>
                 <h2> Completa el formulario </h2>

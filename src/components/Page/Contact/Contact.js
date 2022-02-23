@@ -80,7 +80,7 @@ const Contact = () => {
                         { (fetchState=='loading') && <p className='msg--text'> Enviando... </p> }
                         { (fetchState=='success') && <p className='msg--text'> ¡Mensaje enviado! </p> }
                         <div className='button--wsp-container'>
-                            <a href={redirectToWhatsapp} className='button--wsp' > Whatsapp </a>
+                            <a href={redirectToWhatsapp} className='button--wsp contact-button' > Whatsapp </a>
                         </div>
                     </div>
                 </div>

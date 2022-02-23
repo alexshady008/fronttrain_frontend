@@ -35,7 +35,7 @@ const Testimonials = () => {
         <section className='section--container testimonials'>
             <h2> Los clientes dicen... </h2>
             <div className='testimonials--container inner--container' > 
-            <button onClick={ previous } > {'<'} </button> 
+            <button   onClick={ previous } > {'<'} </button> 
 
                 <Testimonial name={nameClients[testimonial]} 
                     description={descriptionClients[testimonial]}

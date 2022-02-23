@@ -8,7 +8,8 @@
     margin: 10px;
     flex-wrap: wrap;
    justify-content: center;
-    flex-direction:row;  
+    flex-direction:column;  
+    align-items: center;
 }
 .suscription--container .form--container  input{
   margin: 8px;
@@ -26,42 +27,10 @@
   align-items: center;
 }
 
-/* .login--password  button{
-  margin: 10px;
-  background-color: #FF6666 ;
-} */
 
 
-/* Categorias */
-.categories--container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 
-}
 
-.category-tittle{
-  margin-top: 20px;
-  font-size: 30px;
-}
-
-.category--container{
-  background-color: rgb(255, 255, 255);
-  width: 85%;
-  margin: 10px;
-  border-radius:10%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.category--img{
-  border-top-left-radius: 10%;
-border-top-right-radius: 10%;
-width: 85%;
-}
-
-.category--title{
-  margin-bottom: 8px;
-}
 
 /* banner */
 .banner {
@@ -95,6 +64,8 @@ width: 85%;
     top: 25vh;
   }
 }
+
+
 
 @media (min-width: 900px) {
   .banner {
@@ -136,22 +107,21 @@ width: 85%;
 
 /* testimonios */
  .testimonials{
-  margin: auto;
-  width: 100%;
+  width: 100%; 
 }
+
 
 .testimonials--container{
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
-  flex-wrap:wrap ;
-  justify-content: center;
+
 }
 
-.testimonials--container button{
+.button-testimonial{
  height: 2px;
  margin:5px;
  background-color: transparent;
- /* background-color: rgb(136, 35, 35); */
  color: rgb(2, 68, 2);
  font-weight: bolder;
  font-size: 25px;
@@ -172,16 +142,98 @@ width: 85%;
 
 
 .brands{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  margin-top: 20px;
 }
 
+.brands h2{
+  font-size: 28px ;
+}
 
+.brands h3{
+  font-size: 24px ;
+
+}
 .brands--pictures img{
   margin: 10px;
   padding: 15px;
   border-radius: 8%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* Login */
+
+.login--password  button{
+  margin: 10px;
+   padding: 10px;
+   font-weight: 700;
+}
+
+/* Register */
+
+.register-button{
+  margin: 10px;
+}
+
+@media (min-width: 750px) {
+  .login-container{
+      margin-top: 100px;
+  }
+
+  .register-container{
+    margin-top: 100px; 
+  }
+
+  .profile--user-img img{
+    max-width: 30%;
+  }
+  }
+
+/* Profile */
+.profile-container{
+  margin-top: 15px;
+}
+
+.profile{
+  margin: 5px;
+}
+.profile--user-img img{
+  border-radius: 10%;
+  width: 60%;
+  margin-bottom: 10px;
+
+}
+.profile--user-text{
+ margin: 8px;
+}
+.profile--username{
+  margin: 5px;
+}
+
+
+.changeAvatar--button{
+  background-color: #25D366;
+
+   border-radius: 8px;
+   padding: 5px;
+   color: #fff;
+   font-weight: 600;
+   font-size: 14px;
+}
+
+.msg--container{
+ margin-top: 10px;
+}
+.profile--client-details{
+  margin: 15px;
+}
+
+.profile--client-text{
+  margin: 15px;
+}
+
+.profile--button{
+  background-color: #FF6666;
+  padding: 6px;
+  font-weight: 600;
 }

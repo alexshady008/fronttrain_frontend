@@ -9,9 +9,10 @@ const List = ({brand, product}) => {
         <div className='list--container' >
             <div className='list--img-text'>
                 <img src={urlImg} alt='Logo de la marca' />
-                <p> {product} </p>
+               
             </div>
             <div className='list--pdf' >
+            <p> {product} </p>
             <   a href={urlPDF}  download='Lista_de_precios.pdf'> Click para Ver </a>
             </div>
         </div>

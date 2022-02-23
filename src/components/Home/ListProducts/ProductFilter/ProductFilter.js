@@ -112,7 +112,7 @@ const ProductFilter = () => {
                             onChange={ (e) => setCarType(e.target.value)} />
                         <InputText label='Código del producto' type='text' name='cod' value={cod}
                             onChange={ (e) => setCod(e.target.value)} />
-                        <button type='submit' className='form--submit' >Buscar</button>
+                        <button type='submit' className='form--submit submit-catalogue' >Buscar</button>
                     </Form>
                 </Formik>
             </div>

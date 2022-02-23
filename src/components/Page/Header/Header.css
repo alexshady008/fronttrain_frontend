@@ -48,6 +48,22 @@
         width: 42%;
         height: 55%;
        }
+       
+.header--menu-button{
+    top:60%;
+    left:85% !important;
+
+}
+}
+
+
+  
+@media (min-width: 650px) {
+    .header--top-active{
+        width: 35%;
+        height: 55%;
+       }
+       
 }
 
 @media (min-width:750px) {
@@ -90,13 +106,13 @@
 }
 
 /* Botones */
-.header--down{
+/* .header--down{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between ;
     margin: 5px;
  
-}
+} */
 
 .header--menu-button{
     top:60%;
@@ -112,8 +128,6 @@
 }
 
 
-
-
 .header--wsp-button{
     top:60%;
     left:2%;
@@ -123,6 +137,6 @@
     border-radius:50%;
     text-align:center;
     z-index:999;
-}
+} 
 
 

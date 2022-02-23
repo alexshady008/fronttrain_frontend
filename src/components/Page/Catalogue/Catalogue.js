@@ -6,7 +6,7 @@ import ListPrices from './ListPrices/ListPrices'
 
 const Catalogue = () => {
     return(
-        <main className='main-container'>
+        <main className='main-container catalogo-container'>
             <Products />
             <ProductFilter />
             <ListPrices />

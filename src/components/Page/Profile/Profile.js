@@ -84,7 +84,7 @@ const Profile = () => {
 
 
     return(
-        <main className='main--container'>
+        <main className='main--container profile-container'>
             <h1> Mi Perfil </h1>
             <section className='section--container profile'>
                 <h2> Datos de usuario </h2>

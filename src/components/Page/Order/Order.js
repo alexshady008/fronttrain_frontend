@@ -86,7 +86,7 @@ const Order = () => {
     
 
     return(
-        <main className='main--container'>
+        <main className='main--container  order-container'>
             <h1> Tu orden </h1>
             <section className='section--container order'>
                 { orderProducts ? <h2> Estado de tu orden: ENVIADO </h2> : <h2> Estado de tu orden: NO ENVIADO </h2> }
@@ -107,7 +107,7 @@ const Order = () => {
                             <h3> Precio Total: {totals.totalPrice} </h3>
                         </div>
                         <div className='order--sendOrder--buttons'>    
-                            <a href={redirectToWhatsapp} className='button--wsp' > Enviar Pedido por Whatsapp </a>
+                            <a href={redirectToWhatsapp} className='button--wsp order-wpp' > Enviar Pedido por Whatsapp </a>
                             <button onClick={sendOrderByEmail} > Enviar Pedido por Correo </button>
                         </div>
                         <div className='msg--container' >

@@ -1,0 +1,31 @@
+.order-container{
+    margin-top: 20px;
+}
+
+.order--sendOrder--buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+}
+
+.order--sendOrder--buttons button{
+    margin: 5px;
+    padding: 5px;
+    background-color: #FF6666;
+}
+
+.order-wpp{
+    background-color: #25D366;
+  
+    
+    text-align: center;
+    font-weight:600;
+  font-size: 16px;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    max-width: 200px;
+   
+}

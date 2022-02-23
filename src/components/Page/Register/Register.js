@@ -76,7 +76,7 @@ const Register = () => {
 
 
     return (
-        <main className='main--container'>
+        <main className='main--container register-container'>
             <h1> Registrarse </h1>
             {
                 (fetchState!=='success')
@@ -89,7 +89,7 @@ const Register = () => {
                                 <InputText name='userName' label='Nombre de Usuario:' type='text' />
                                 <InputText name='email' label='Correo Electrónico:' type='email' />
                                 <InputText name='password' label='Contraseña:' type='password' />
-                                <button type='submit' className='form--submit'>Registrarse</button>
+                                <button type='submit' className='form--submit register-button'>Registrarse</button>
                             </Form>
                         </Formik>
                         <div className='msg--container' >
