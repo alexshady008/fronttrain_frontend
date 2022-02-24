@@ -16,7 +16,7 @@ const Header = () => {
         <div>
             <div className='header--container'>
                 
-                <div className= { menu ? 'header--top-active' : 'header--top-inactive' } >
+                <div className= { menu ? 'header--top header--active' : 'header--top header--inactive' } >
                     <picture className='header--logo'> 
                         <img src='/logo.png' alt='logo' />
                     </picture>

@@ -7,8 +7,8 @@ const Brands = () => {
     return(
         <section className='section--container brands'>
             <h2> Nuestras marcas </h2>
-            <div className='brands--container' > 
-                <div className='brands brands--product inner--container'>
+            <div className='brands--container inner--container' > 
+                <div className='brands brands--product'>
                     <h3> Productos </h3>
                     <picture className='brands--pictures products-img'>
                         <img src='/assets/brand/factories/Icsa.png' alt='Logo de Icsa' />

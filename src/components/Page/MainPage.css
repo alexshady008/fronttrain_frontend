@@ -112,20 +112,38 @@
 
 
 .testimonials--container{
+  width: 100%;
  display: flex;
- flex-wrap: wrap;
+ /* flex-wrap: wrap; */
  justify-content: center;
-
+ align-items: center;
 }
 
-.button-testimonial{
+.testimonials--button{
+ width: 20%;
  height: 2px;
+ min-width: 20px;
  margin:5px;
  background-color: transparent;
  color: rgb(2, 68, 2);
  font-weight: bolder;
  font-size: 25px;
+}
 
+.testimonial {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial--active {
+  opacity: 100%;
+  transition: all 1s;
+}
+
+.testimonial--inactive {
+  opacity: 0%;
+  transition: all 1s;
 }
 
 .testimonial--name{
@@ -135,8 +153,10 @@
   margin: 10px;
 }
 .testimonial--description{
+  width: 100%;
   font-size: 15px;
-  margin: 5px;
+  
+  /* margin: 5px; */
 }
 /* brands */
 

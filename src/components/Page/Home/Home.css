@@ -27,3 +27,9 @@
   .category--title{
     margin-bottom: 8px;
   }
+
+  /* Description*/
+
+  .description--container{
+    margin: 10px;
+  }

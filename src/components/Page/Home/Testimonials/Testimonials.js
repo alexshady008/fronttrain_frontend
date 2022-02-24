@@ -5,10 +5,10 @@ import Testimonial from './Testimonial/Testimonial'
 
 const nameClients = ['Tienda 1', 'Tienda 2', 'Tienda 3', 'Tienda 4', 'Tienda 5']
 const descriptionClients = [
-    'dkgds sdfjksdlgjhsd odjgidsjgkdlxgjklfdlkgjffjgfjfhgfjfgjfdj', 
-    'fhdsghs dsghsdgsagsdgdfgdf fgdfhgdfhdf dgfdhdhfdjftg dfhfdhfd', 
-    'lksjgklsajg ksajklsdjgskdgj klsjgfklsjgklsjg lksjgklsdgjkldsjg', 
-    'Tjnvjsdfng jkshfjsakhfjaskf jkshfkjsahfjsk kjshfjksahfjskafhsjkfh', 
+    'dkgds sdfjksdlgjhsd odjg idsjgkd lxgj klfdlkgjff jgfjfhg fjfgjfdj', 
+    'fhdsghs dsgh sdgsagsd gdfgdf fgdfhgdfhdf dgfdh dhfdjftg dfhfdhfd', 
+    'lksjgklsajg ksajklsdjgskdgj klsjgfkl sjgklsjg lksjgklsdgjkldsjg', 
+    'Tjnvjsdfng jkshfjsakhfjaskf jkshfkjsahfjsk kjshfjksahf jskafhsjkfh', 
     'jsjksahdfjas jhadjkahdjakhd jkshjskhfjsak jshfsj']
 
 
@@ -35,13 +35,13 @@ const Testimonials = () => {
         <section className='section--container testimonials'>
             <h2> Los clientes dicen... </h2>
             <div className='testimonials--container inner--container' > 
-            <button   onClick={ previous } > {'<'} </button> 
+            <button className='testimonials--button'   onClick={ previous } > {'<'} </button> 
 
                 <Testimonial name={nameClients[testimonial]} 
                     description={descriptionClients[testimonial]}
-                    className={ loaded ? 'testimonial--active' : 'testimonial--inactive' } />
+                    className={ loaded ? 'testimonial testimonial--active' : 'testimonial testimonial--inactive' } />
 
-            <button onClick={ next } > {'>'} </button> 
+            <button className='testimonials--button' onClick={ next } > {'>'} </button> 
             </div>
         </section>
     )

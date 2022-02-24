@@ -21,7 +21,11 @@
 
  .coverPage--wsp {
    top:96%;
-   left:26%;
+   /* left:26%; */
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   
    height:5%;
    width:49%;
    text-align: center;
@@ -37,11 +41,11 @@
 }
 
 
-@media (min-width: 560px) {
+/* @media (min-width: 560px) {
    .coverPage--wsp {
       left:30%;
    }
- }
+ } */
 
 @media (min-width: 750px) {
 
@@ -58,9 +62,9 @@
    font-size: 40px;
 
 }
-.coverPage--wsp {
+/* .coverPage--wsp {
    left:32%;
-}
+} */
 }
 
 @media (min-width: 900px) {
