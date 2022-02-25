@@ -52,7 +52,7 @@
 
   
 @media (min-width: 500px) {
-    .header--top-active{
+    .header--top{
         width: 42%;
         height: 55%;
        }
@@ -67,7 +67,7 @@
 
   
 @media (min-width: 650px) {
-    .header--top-active{
+    .header--top{
         width: 35%;
         height: 55%;
        }
@@ -75,9 +75,9 @@
 }
 
 @media (min-width:750px) {
-    .header--top-active{
+    .header--top{
         display: inline-flex;
-        background-color: rgb(38, 29, 158);
+        background-color: rgb(3, 3, 3);
         flex-wrap: wrap;
         flex-direction: row;
          width: 100%;

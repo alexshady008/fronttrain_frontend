@@ -30,6 +30,39 @@
 
   /* Description*/
 
+   .description{
+     width: 100%;
+     margin: 0px;
+  }
+  
   .description--container{
-    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+  }
+  
+  @media (min-width: 750px) {
+    .description--container{
+      width: 100%;
+      display: flex;
+      align-items: center;   
+      flex-direction: row;
+    }
+
+    .description-1, .description-2{
+      margin: 10px;
+    }
+  }
+ 
+  
+  @media (min-width: 1200px) {
+    .description-1 p , .description-2 p{ 
+      /* margin: 10px; */
+      font-size: 25px;
+      text-align:inherit;
+      color: black;
+      font-weight: 400;
+    }
   }
