@@ -80,10 +80,9 @@ height: 100%;
 
 }
 .list--pdf{
-    background-color: rgb(184, 180, 180);
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
-    background-color: #b8b8b8;
+    background-color: #e6e0e0;
     padding: 10px;
     display: flex;
    flex-direction: column;
@@ -95,16 +94,26 @@ height: 100%;
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 16px;
 
 }
 
 .list--pdf p {
     max-width: fit-content;
     height: 60px;
+    font-size: 18px;
 }
 
 @media (min-width: 750px) {
 .catalogo-container{
     margin-top: 100px;
+}
+.productFilter--container .form--container  select{
+      width: 400px;
+      height: 45px;
+ }
+ .productFilter--container .form--container  input{
+    height: 45px;
+   width: 400px;
 }
 }

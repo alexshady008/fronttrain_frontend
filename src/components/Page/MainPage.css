@@ -195,7 +195,13 @@
 
 
 /* Login */
+  .login{
+    margin-top: 20px;
+  }
 
+  .login--container{
+    margin-top: 20px;
+  }
 .login--password  button{
   margin: 10px;
    padding: 10px;
@@ -203,7 +209,13 @@
 }
 
 /* Register */
+  .register{
+    margin-top: 20px;
+  }
 
+  .register--container{
+    margin-top: 20px;
+  }
 .register-button{
   margin: 10px;
 }
