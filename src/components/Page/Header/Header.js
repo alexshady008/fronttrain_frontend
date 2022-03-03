@@ -2,7 +2,7 @@ import './Header.css'
 import {Link, Outlet} from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import config from '../../../config/config'
-import { useState } from 'react'
+import { useState,useRef } from 'react'
 
 
 const Header = () => {
@@ -11,12 +11,14 @@ const Header = () => {
     const orderList = useSelector( state => state.order.productsList )
 
     const handleMenu = () => setMenu(!menu)
+     let headerRef = useRef()
+    console.log(headerRef);
 
     return(
         <div>
             <div className='header--container'>
                 
-                <div className= { menu ? 'header--top header--active' : 'header--top header--inactive' } >
+                <div ref={headerRef} className= { menu ? 'header--top header--active' : 'header--top header--inactive' } >
                     <picture className='header--logo'> 
                         <img src='/logo.png' alt='logo' />
                     </picture>
