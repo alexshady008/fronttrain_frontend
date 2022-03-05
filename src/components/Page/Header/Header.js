@@ -2,23 +2,52 @@ import './Header.css'
 import {Link, Outlet} from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import config from '../../../config/config'
-import { useState } from 'react'
+import { useState,useRef,useEffect} from 'react'
+
+
+
 
 
 const Header = () => {
+    let headerRef = useRef()
+    useEffect( ()=>{
+        if (window.innerWidth >= 750) {
+            headerRef.current.className = 'header--top header--active';
+        }else headerRef.current.className = 'header--top header--inactive';
+        
+    },[headerRef, useRef])
+    
+    // (document).on("click",function(e) {
+                    
+    //     var container = headerRef
+                           
+    //        if (!container.is(e.target) && container.has(e.target).length === 0) { 
+    //           alert("¡Pulsaste fuera!");               
+    //        }
+    // });
+  
+          
+ 
+
+
     const [menu, setMenu] = useState(true)
     const redirectToWhatsapp = `https://api.whatsapp.com/send/?phone=${config.numberAdmin}&text=Hola%2C+me+gustaria+hacerte+una+consulta`
     const orderList = useSelector( state => state.order.productsList )
 
+    
+
     const handleMenu = () => setMenu(!menu)
+
 
     return(
         <div>
             <div className='header--container'>
                 
-                <div className= { menu ? 'header--top header--active' : 'header--top header--inactive' } >
-                    <picture className='header--logo'> 
-                        <img src='/logo.png' alt='logo' />
+                < div id='menu' ref={headerRef} className= { menu ? 'header--top header--inactive' : 'header--top header--active' } >
+                    <picture className='header--logo'> <a href='/'>
+                    <img src='/logo.png' alt='logo' />
+                    </a>
+                     
                     </picture>
                     <nav className='header--nav'>
                         <Link to='/' className='navLink' > Inicio </Link>
@@ -41,7 +70,7 @@ const Header = () => {
                 </div>
 
                 <div className='header--down'>
-                    <div className='header--menu-button'>
+                    <div className='header--menu-button' id='header--menu-button'>
                         <picture onClick={handleMenu} >
                             <img src='/menu_button.png' alt='Logo de Whatsapp' />
                         </picture>
