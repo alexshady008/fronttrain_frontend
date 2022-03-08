@@ -137,7 +137,7 @@ const ProductFormAdd = () => {
                                 onChange={ (e) => setValues({...values, carType:e.target.value}) } />
                         <label> 
                             Agregar una Imagen
-                            <input name='image' type='file' accept="image/png, image/jpeg" ref={inputFile} 
+                            <input  name='image' type='file' accept="image/png, image/jpeg" ref={inputFile} 
                             onChange={ (e) => setValues({...values, image:e.target.files[0]})} />  
                         </label>
                         <button type='submit' className='form--submit' >Añadir Producto</button>
