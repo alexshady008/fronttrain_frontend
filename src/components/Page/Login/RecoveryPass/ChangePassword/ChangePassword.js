@@ -42,7 +42,7 @@ const ChangePassword = () => {
     }
 
     return(
-        <main className='main--container' >
+        <main className='main--container changePassword--container' >
             <h1> Recuperar Contraseña </h1>
             <section className='section--container recoveryPass'>
                 <h2> Escribe tu nueva contraseña  </h2>

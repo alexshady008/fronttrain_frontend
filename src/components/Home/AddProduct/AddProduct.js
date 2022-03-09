@@ -1,4 +1,4 @@
-import './AddProduct.css'
+ import './AddProduct.css'
 import ProductFormAdd from './ProductFormAdd/ProductFormAdd'
 import PreviewProductAdd from './PreviewProductAdd/PreviewProductAdd'
 

@@ -1,6 +1,4 @@
-
-@media  (min-width: 750px)  {
-    
+ 
     .listProducts--container{
      margin-top: 100px;
     }
@@ -9,22 +7,12 @@
         margin: 15px;
     }
      
-    .products{
-        margin: 10px;
-    }
-    .products h2{
-        margin: 10px;
-        font-size: 25px;
+
+    .delete-Admin-Button{
+       /* background-color: firebrick; */
+       background-color: #FF6666;
     }
 
-    .product--container{
-        margin: 15px;
-    }
-
-    .product--container img{
-        border-radius: 5%;
-        max-height: 450px;
-    }
 
     .product--description ,.product--price, .product--category , .product--brand{
         margin: 8px;
@@ -34,4 +22,3 @@
     .product--button{
         margin: 5px;
     }
-}

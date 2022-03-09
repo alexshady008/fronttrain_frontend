@@ -64,7 +64,7 @@ const Login = () => {
     }
 
     return (
-        <main className='main--container'>
+        <main className='main--container admin-login'>
             <h1> Iniciar Sesion </h1>
             <section className='section--container login'>
                 <h2> Completa el formulario </h2>

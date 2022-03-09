@@ -1,5 +1,74 @@
 .order-container{
     margin-top: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.order-container h1{
+    margin: 20px;
+    font-size:35px;
+}
+
+.order--product-details{
+    background-color: #f1eded;
+    margin:10px;
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+
+.order--product-delete{
+    margin-bottom: 8px;
+}
+.order--products{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 85%;
+    margin: auto;
+}
+
+.order--product-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+
+.order--product-cod ,.order--product-brand , .order--product-price ,.order--product-quantity{
+    width: 40%;
+    margin: 8px;
+}
+
+.order--product-h3{
+   color: #026D00
+}
+
+.order--product-quantity-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-button{
+    width: 15%;
+    height: 2px;
+    min-width: 20px;
+    margin:8px;
+    background-color: transparent;
+    color: rgb(2, 68, 2);
+    font-weight: bolder;
+    font-size: 25px; 
+    
+}
+
+.order--sendOrder{
+    margin: 15px;
 }
 
 .order--sendOrder--buttons{
@@ -27,8 +96,20 @@
     max-width: 200px;
    
 }
+
+@media (min-width: 550px){
+    .order--products{
+    width: 50%;
+    }
+}
 @media (min-width: 750px) {
     .order-container{
         margin-top: 100px;
+    }
+}
+
+@media (min-width: 1200px){
+    .order--products{
+    width: 40%;
     }
 }

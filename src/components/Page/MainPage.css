@@ -266,6 +266,12 @@
    font-size: 14px;
 }
 
+.msg-alert p {
+  color: #410101  !important;
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 5px;
+}
 .msg--container{
  margin-top: 10px;
 }

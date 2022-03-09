@@ -17,14 +17,16 @@ const PreviewProductAdd = () => {
     <section className='section--container preview'>
         <h2> Previsualización del producto </h2>
         <div className='preview--container inner--container'>
-            <p className='product--description'> Código: {cod} </p>
-            <p className='product--description'> Description: {description} </p>
-            <p className='product--price'> Precio: {price} </p>
-            <p className='product--category'> Categoria: {categoryId} </p>
-            <p className='product--brand'> Marca: {productBrand} </p>
-            <p className='product--car-brand'> Auto: {carBrand} </p>
-            <p className='product--car-type'> Tipo: {carType} </p>
-            <img className='product--image' src={urlImage} alt='Producto' />
+            <div className='preview--container2'>
+                <p className='product--description preview'> Código: {cod} </p>
+                <p className='product--description preview'> Description: {description} </p>
+                <p className='product--price preview'> Precio: ${price} </p>
+                <p className='product--category preview'> Categoria: {categoryId} </p>
+                <p className='product--brand preview'> Marca: {productBrand} </p>
+                <p className='product--car-brand preview'> Auto: {carBrand} </p>
+                <p className='product--car-type preview'> Tipo: {carType} </p>
+                <img className='product--image preview' src={urlImage} alt='Producto' />
+            </div>
         </div>
     </section>
     )

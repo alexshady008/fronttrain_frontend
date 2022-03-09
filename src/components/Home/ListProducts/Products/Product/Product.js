@@ -44,15 +44,17 @@ const Product = ({value}) => {
 
     return(
         <div className='product--container'>
-            { value.image ? <img src={urlImage} alt='Repuesto' /> : 
-            <img src='assets/photo_product_default.png' alt='Imagen Default' /> }
+            <div className='product--container2'>
+            { value.image ? <img className='product--image' src={urlImage} alt='Repuesto' /> : 
+            <img className='product--image' src='assets/photo_product_default.png' alt='Imagen Default' /> }
             <p className='product--description' > Codigo:  {value.cod} </p>
             <p className='product--description' > Descripción:  {value.description} </p>
             <p className='product--price' > Precio: {value.price} </p>
             <p className='product--category' > Categoria: {value.categoryId} </p>
             <p className='product--brand' > Marca:  {value.productBrand} </p>
             <button className='product--button' onClick={ () => updateProduct(value) } > Actualizar producto </button>
-            <button className='product--button' onClick={ () => deleteProduct(value.id) } > Eliminar producto </button>
+            <button className='product--button delete-Admin-Button' onClick={ () => deleteProduct(value.id) } > Eliminar producto </button>
+            </div>
         </div>
     )
 } 
