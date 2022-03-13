@@ -13,22 +13,26 @@ const descriptionClients = [
 
 
 const Testimonials = () => {
-    const [loaded, setLoaded] = useState(false)
+    const [loaded, setLoaded] = useState(true)
     const [testimonial, setTestimonials] = useState(0)
     const maxTestimonial = 4
 
     const previous = () => {
         setLoaded(false) 
-        if (testimonial>0) setTestimonials(testimonial-1)
-        else setTestimonials(maxTestimonial)
-        setTimeout(() => setLoaded(true) , 500);
+        setTimeout(() => {
+            if (testimonial>0) setTestimonials(testimonial-1)
+            else setTestimonials(maxTestimonial)
+            setLoaded(true)
+        } , 500);
     }
 
     const next = () => {
         setLoaded(false) 
-        if (testimonial<maxTestimonial) setTestimonials(testimonial+1)
-        else setTestimonials(0)
-        setTimeout(() => setLoaded(true) , 500);
+        setTimeout(() => {
+            if (testimonial<maxTestimonial) setTestimonials(testimonial+1)
+            else setTestimonials(0)
+            setLoaded(true)
+        } , 500);
     }
 
     return(

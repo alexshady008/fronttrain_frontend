@@ -6,14 +6,14 @@ import env from 'react-dotenv'
 console.log(env)
 
 const config = {
-    urlServer: 'http://localhost:4000/api',
-    urlServerDb: 'http://localhost:4000/database/products/',
-    urlServerUserDb: 'http://localhost:4000/database/avatars/',
-    urlServerPdf: 'http://localhost:4000/pdf/',
-    // urlServer: 'https://git.heroku.com/front-train-backend.git/api',
-    // urlServerDb: 'https://git.heroku.com/front-train-backend.git/database/products/',
-    // urlServerUserDb: 'https://git.heroku.com/front-train-backend.git/database/avatars/',
-    // urlServerPdf: 'https://git.heroku.com/front-train-backend.git/pdf/',
+    // urlServer: 'http://localhost:4000/api',
+    // urlServerDb: 'http://localhost:4000/database/products/',
+    // urlServerUserDb: 'http://localhost:4000/database/avatars/',
+    // urlServerPdf: 'http://localhost:4000/pdf/',
+    urlServer: 'https://git.heroku.com/front-train-backend.git/api',
+    urlServerDb: 'https://git.heroku.com/front-train-backend.git/database/products/',
+    urlServerUserDb: 'https://git.heroku.com/front-train-backend.git/database/avatars/',
+    urlServerPdf: 'https://git.heroku.com/front-train-backend.git/pdf/',
     limitPage: 10,
     limitOffset: 100,
     intervalSesion: 1000,

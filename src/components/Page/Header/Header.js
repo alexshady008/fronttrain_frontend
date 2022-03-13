@@ -10,38 +10,23 @@ import { useState,useRef,useEffect} from 'react'
 
 const Header = () => {
     let headerRef = useRef()
-    useEffect( ()=>{
-        if (window.innerWidth >= 750) {
-            headerRef.current.className = 'header--top header--active';
-        }else headerRef.current.className = 'header--top header--inactive';
-        
-    },[headerRef, useRef])
-    
-    // (document).on("click",function(e) {
-                    
-    //     var container = headerRef
-                           
-    //        if (!container.is(e.target) && container.has(e.target).length === 0) { 
-    //           alert("¡Pulsaste fuera!");               
-    //        }
-    // });
-  
-          
- 
-
-
     const [menu, setMenu] = useState(false)
     const redirectToWhatsapp = `https://api.whatsapp.com/send/?phone=${config.numberAdmin}&text=Hola%2C+me+gustaria+hacerte+una+consulta`
     const orderList = useSelector( state => state.order.productsList )
 
-    
+    useEffect( ()=>{
+        if (window.innerWidth >= 750) headerRef.current.className = 'header--top header--active';
+        else headerRef.current.className = 'header--top header--inactive';
+    },[headerRef, useRef])
+
+    window.addEventListener('click', (event) => {
+        if (menu && event.clientY<(window.innerHeight-200)) {
+            const menuWidht = headerRef.current.offsetWidth
+            if (event.clientX>menuWidht ) setMenu(!menu);
+        }
+    });
 
     const handleMenu = () => setMenu(!menu)
-
-    if (menu){
-        console.log( headerRef.offsetWidth )   
-    }
-
 
     return(
         <div>
