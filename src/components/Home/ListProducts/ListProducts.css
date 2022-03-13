@@ -1,28 +1,24 @@
-.products--admin{
-   margin-top:90px;
-   margin-bottom: 20px;
-}
+ 
+    .listProducts--container{
+     margin-top: 100px;
+    }
+    
+    .listProducts--container h1{
+        margin: 15px;
+    }
+     
 
-.products-title-admin{
-    margin-bottom: 10px;
-}
+    .delete-Admin-Button{
+       /* background-color: firebrick; */
+       background-color: #FF6666;
+    }
 
-.products h2{
-    margin: 20px;
-    font-size: 30px;
-}
 
-.product--description, .product--price , .product--category, .product--brand{
-    margin: 8px;
-    font-size: 18px;
-}
+    .product--description ,.product--price, .product--category , .product--brand{
+        margin: 8px;
+    }
 
-.product--container{
-    margin-bottom: 18px;
-}
 
-.product--button{
-    margin: 5px;
-    font-size: 18px;
-    padding: 8px;
-}
+    .product--button{
+        margin: 5px;
+    }

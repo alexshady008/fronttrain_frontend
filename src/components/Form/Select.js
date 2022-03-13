@@ -6,7 +6,7 @@ const Select = ({label, children, ...props}) => {
         <div className='input--container'>
             <label>
                 {label}
-                <select {...field} {...props} >
+                <select className='select--admin' {...field} {...props} >
                     {children}
                 </select>
             </label>

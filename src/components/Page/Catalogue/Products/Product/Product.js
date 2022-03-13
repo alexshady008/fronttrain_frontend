@@ -27,12 +27,14 @@ const Product = ({value}) => {
     
     return(
         <div className='product--container'>
+            <div className='product--container2'>
             { value.image ? <img className='product--image' src={urlImage} alt='Repuesto' /> : 
             <img className='product--image' src='assets/photo_product_default.png' alt='Imagen Default' /> }
-            <p className='product--cod' > {value.cod} </p>
+            <p className='product--cod' >Codigo: {value.cod} </p>
             <p className='product--description' > {value.description} </p>
             <p className='product--brand' > {value.productBrand} </p>
-            <p className='product--price' > {value.price} </p>
+            <p className='product--price' > ${value.price} </p>
+           
             {/* <p className='product--category' > Categoria: {value.categoryId} </p>
             <p className='product--brand' > Marca:  {value.productBrand} </p>
             <p className='product--car-brand' > Auto:  {value.carBrand} </p>
@@ -50,6 +52,7 @@ const Product = ({value}) => {
                 
             :
                 <p className='product--msg' > ¡Debes iniciar sesion para encargar este producto! </p> }
+                 </div>
         </div>
     )
 }

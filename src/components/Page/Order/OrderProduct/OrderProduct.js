@@ -27,19 +27,19 @@ const OrderProduct = ({number, value, setquantityChanged}) => {
     return(
         <div className='order--product-container'>
             <div className='order--product-cod' >
-                <h3> Código: </h3>
+                <h3 className='order--product-h3'> Código: </h3>
                 <p> {value.cod} </p>
             </div>
             <div className='order--product-brand' >
-                <h3> Marca: </h3>
+                <h3 className='order--product-h3'> Marca: </h3>
                 <p> {value.productBrand} </p>
             </div>
             <div className='order--product-price' >
-                <h3> Precio: </h3>
-                <p> {value.price} </p>
+                <h3 className='order--product-h3'> Precio: </h3>
+                <p> ${value.price} </p>
             </div>
             <div className='order--product-quantity'>
-                 <h3> Cantidad: </h3>
+                 <h3 className='order--product-h3'> Cantidad: </h3>
                     <div className='order--product-quantity-buttons'>
                         <button onClick={subtractQuantity} className='quantity-button'> {'<'} </button>
                         <p> {quantity} </p>

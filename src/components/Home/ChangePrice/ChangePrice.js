@@ -52,12 +52,12 @@ const ChangePrice = () => {
         <main className='main-container changePrice--container'>
             <h1>Actualizar precio</h1>
             <section className='section--container changePrice'>
-                <div className='changePrice--container inner--container' > 
+                <div className=' inner--container' > 
                     <Formik 
                         initialValues={initial}
                         validationSchema={schema}
                         onSubmit={handleSubmit}>
-                            <Form className='form--container'>
+                            <Form className='form--container changePrice-form'>
                                 <Select name='percentageType' label='Seleccionar el tipo de Porcentaje' >
                                     <option value='' >Seleccionar Tipoe</option>
                                     <option value='aum' >Aumento</option>

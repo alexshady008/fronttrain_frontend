@@ -5,7 +5,7 @@ const InputText = ({label, ...props}) => {
 
     return(
         <div className='input--container'>
-            <label> 
+            <label className='label-admin'> 
                 {label}
                  <input {...field} {...props}  />
             </label>

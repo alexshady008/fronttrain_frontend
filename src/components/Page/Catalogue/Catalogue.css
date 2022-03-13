@@ -2,15 +2,84 @@
 
 
 .products{
-    /* background-color: blue; */
     margin: 10px;
 }
 
+.products h2{
+    margin: 20px;
+    font-size: 25px;
+}
 
+.product--container{
+    margin: 20px;
+
+}
+
+.product--container2{
+   margin: 0 auto;
+    background-color: #f1eded;
+    border-radius: 8%;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.product--container2 img{
+    width: 100%;
+    height: 100%;
+}
+.product--image {
+border-top-right-radius: 8%;
+border-top-left-radius: 8%;
+
+}
+
+.product--cod, .product--price{
+    color: #026D00;
+    font-size: 18px;
+}
+.product--cod, .product--price , .product--description , .product--brand{
+    margin: 6px;
+}
+
+.product--button{
+    margin: 8px;
+}
+
+
+.product--msg{
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/* Paginacion */
+
+.product--pagination--container{
+    width: 100%;
+}
+
+.pagination--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagination--arrow, .pagination--pageNumber{
+    width: 15%;
+ height: 2px;
+ min-width: 20px;
+ margin:8px;
+ background-color: transparent;
+ color: rgb(2, 68, 2);
+ font-weight: bolder;
+ font-size: 25px; 
+ 
+}
 /* Filter products */
 .productFilter{
  background-color: #FF6666;
- /* padding: 5px; */
 }
 .productFilter--container{
      display: flex;
@@ -47,7 +116,9 @@
     border-radius: 5px;
 }
 
-
+.product--msg{
+    margin: 5px;
+}
 .submit-catalogue{
     margin:10px;
     background-color: #25D366 !important;
@@ -116,4 +187,15 @@ height: 100%;
     height: 45px;
    width: 400px;
 }
+
+
+.product--image{
+ width: 350px;
+    }
+
+    .product--container2{
+        width: 370px;
+        margin: 0 auto;
+    }
+    
 }

@@ -1,11 +1,31 @@
-.admin--header-logo{
-   margin-top: 20px;
+
+.header--admin-logo{
+    margin: 10px;
 }
 
-.admin-nav{
-    margin-top: 20px;
+.link--admin{
+   display: flex;
+   flex-direction: column;
 }
 
-.navLink{
-    font-size: 22px;
+.link--admin a{
+font-size: 23px;
+margin: 10px;
+  
 }
+
+@media  (min-width: 750px){
+
+    .header--admin-logo{
+        margin-top: 20px;
+    }
+    
+    .link--admin{
+        flex-direction: row;
+        margin-top: 20px;
+  
+    }
+
+
+}
+

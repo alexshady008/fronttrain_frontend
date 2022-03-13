@@ -28,7 +28,7 @@ const Products = () => {
     }, [] )
 
     return(
-        <section className='section--container products'>
+        <section className='section--container products '>
             <h2>Listado de Productos</h2>
             <div className='products--container inner--container'>
                 { (productsError=='idle') && 
