@@ -110,16 +110,10 @@
 }
 
 /* Botones */
-/* .header--down{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between ;
-    margin: 5px;
- 
-} */
+
 
 .header--menu-button{
-    top:60%;
+    top:80%;
     left:75%;
     color:#fff;
     display:block;
@@ -133,7 +127,7 @@
 
 
 .header--wsp-button{
-    top:60%;
+    top:80%;
     left:2%;
     display:block;
     color:#fff;

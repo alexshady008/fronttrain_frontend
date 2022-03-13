@@ -1,0 +1,16 @@
+.addProduct--admin{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.addProduct--admin h1{
+    margin: 15px;
+}
+
+.productFormAdd{
+  margin-bottom: 15px;
+}
+
+.productFormAdd h2{
+    margin:10px ;
+}

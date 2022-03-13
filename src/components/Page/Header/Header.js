@@ -30,7 +30,7 @@ const Header = () => {
  
 
 
-    const [menu, setMenu] = useState(true)
+    const [menu, setMenu] = useState(false)
     const redirectToWhatsapp = `https://api.whatsapp.com/send/?phone=${config.numberAdmin}&text=Hola%2C+me+gustaria+hacerte+una+consulta`
     const orderList = useSelector( state => state.order.productsList )
 
@@ -38,12 +38,16 @@ const Header = () => {
 
     const handleMenu = () => setMenu(!menu)
 
+    if (menu){
+        console.log( headerRef.offsetWidth )   
+    }
+
 
     return(
         <div>
             <div className='header--container'>
                 
-                < div id='menu' ref={headerRef} className= { menu ? 'header--top header--inactive' : 'header--top header--active' } >
+                < div id='menu' ref={headerRef} className= { menu ? 'header--top header--active' : 'header--top header--inactive' } >
                     <picture className='header--logo'> <a href='/'>
                     <img src='/logo.png' alt='logo' />
                     </a>

@@ -1,0 +1,28 @@
+.products--admin{
+   margin-top:90px;
+   margin-bottom: 20px;
+}
+
+.products-title-admin{
+    margin-bottom: 10px;
+}
+
+.products h2{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.product--description, .product--price , .product--category, .product--brand{
+    margin: 8px;
+    font-size: 18px;
+}
+
+.product--container{
+    margin-bottom: 18px;
+}
+
+.product--button{
+    margin: 5px;
+    font-size: 18px;
+    padding: 8px;
+}

@@ -49,7 +49,7 @@ const ChangePrice = () => {
     }
 
     return(
-        <main className='main-container'>
+        <main className='main-container changePrice--container'>
             <h1>Actualizar precio</h1>
             <section className='section--container changePrice'>
                 <div className='changePrice--container inner--container' > 
