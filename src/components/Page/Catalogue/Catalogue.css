@@ -3,6 +3,7 @@
 
 .products{
     margin: 10px;
+    margin-bottom: 20px;
 }
 
 .products h2{
@@ -75,16 +76,23 @@ border-top-left-radius: 8%;
  color: rgb(2, 68, 2);
  font-weight: bolder;
  font-size: 25px; 
- 
+}
+
+.pagination--pageNumber{
+    align-self: flex-start;
 }
 /* Filter products */
 .productFilter{
  background-color: #FF6666;
+
 }
 .productFilter--container{
      display: flex;
 }
-
+.title-productFilter-admin{
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
 .productFilter--container .form--container {
     margin: auto;
     align-items: center;
@@ -120,7 +128,8 @@ border-top-left-radius: 8%;
     margin: 5px;
 }
 .submit-catalogue{
-    margin:10px;
+    margin-top:10px;
+    margin-bottom: 25px;
     background-color: #25D366 !important;
     
 }
@@ -130,13 +139,13 @@ border-top-left-radius: 8%;
 .listPrices{
     margin-bottom: 15px;
 }
+.listPrices h2{
+    margin: 25px;
+}
 .listPrices--container{
     display: flex;
     justify-content: center;
-   flex-wrap: wrap;
-
-
-    
+   flex-wrap: wrap;   
 }
 
 .list--container{
@@ -148,7 +157,6 @@ height: 100%;
 
 .list--img-text img{
     width: 80%;
-
 }
 .list--pdf{
     border-bottom-right-radius: 10%;

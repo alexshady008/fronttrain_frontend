@@ -1,3 +1,4 @@
+import './Login.css'
 import axios from 'axios'
 import {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
@@ -71,7 +72,7 @@ const Login = () => {
 
     return (
         <main className='main--container login-container'>
-            <h1> Iniciar Sesion </h1>
+            <h1 className="login-h1"> Iniciar Sesion </h1>
             <section className='section--container login'>
                 <h2> Completa el formulario </h2>
                 <div className='login--container inner--container' >
@@ -79,7 +80,7 @@ const Login = () => {
                         <Form className='form--container'>
                             <InputText name='userName' label='Nombre de usuario' type='text' />
                             <InputText name='password' label='Contraseña' type='password' />
-                            <button type='submit' className='form--submit'>Iniciar Sesion</button>
+                            <button type='submit' className='form--submit login-submit'>Iniciar Sesion</button>
                         </Form>
                     </Formik>
                     <div className='msg--container' >
