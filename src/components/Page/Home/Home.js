@@ -18,7 +18,7 @@ const Home = () => {
             <Categories />
             <Banner title='¡En Front Train tenemos una amplia variedad de repuestos!' />
             <Description />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Brands />
             <Suscription />
         </main>

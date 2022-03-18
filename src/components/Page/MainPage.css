@@ -171,68 +171,9 @@
   width: 100%;
   font-size: 15px;
 }
-/* brands */
 
 
-.brands{
-  margin-top: 20px;
-}
 
-.brands h2{
-  font-size: 28px ;
-}
-
-.brands h3{
-  font-size: 24px ;
-
-}
-.brands--pictures img{
-  margin: 10px;
-  padding: 15px;
-  border-radius: 8%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-
-/* Login */
-  .login{
-    margin-top: 20px;
-  }
-
-  .login--container{
-    margin-top: 20px;
-  }
-.login--password  button{
-  margin: 10px;
-   padding: 10px;
-   font-weight: 700;
-}
-
-/* Register */
-  .register{
-    margin-top: 20px;
-  }
-
-  .register--container{
-    margin-top: 20px;
-  }
-.register-button{
-  margin: 10px;
-}
-
-@media (min-width: 750px) {
-  .login-container{
-      margin-top: 100px;
-  }
-
-  .register-container{
-    margin-top: 100px; 
-  }
-
-  .profile--user-img img{
-    max-width: 30%;
-  }
-  }
 
 /* Profile */
 .profile-container{

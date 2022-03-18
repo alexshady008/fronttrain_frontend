@@ -64,8 +64,8 @@ const ProductFilter = () => {
     }
 
     return(
-        <section className='section--container productFilter' >
-            <h2>Buscar Productos</h2>
+        <section className='section--container productFilter ' >
+            <h2 className='title-productFilter-admin'>Buscar Productos</h2>
             <div className='productFilter--container inner--container' >
                 <Formik initialValues={formValue} validationSchema={schema} onSubmit={submit} >
                     <Form className='form--container'>
