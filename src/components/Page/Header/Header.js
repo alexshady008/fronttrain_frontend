@@ -16,20 +16,7 @@ const Header = () => {
         }else headerRef.current.className = 'header--top header--inactive';
         
     },[headerRef, useRef])
-    
-    // (document).on("click",function(e) {
-                    
-    //     var container = headerRef
-                           
-    //        if (!container.is(e.target) && container.has(e.target).length === 0) { 
-    //           alert("¡Pulsaste fuera!");               
-    //        }
-    // });
   
-          
- 
-
-
     const [menu, setMenu] = useState(true)
     const redirectToWhatsapp = `https://api.whatsapp.com/send/?phone=${config.numberAdmin}&text=Hola%2C+me+gustaria+hacerte+una+consulta`
     const orderList = useSelector( state => state.order.productsList )
