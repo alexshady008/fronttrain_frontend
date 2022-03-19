@@ -56,10 +56,10 @@ const Contact = () => {
                 <div className='contact--container inner--container'>
                     <Formik initialValues={initial} validationSchema={schema} onSubmit={handleSubmit} >
                         <Form className='form--container'>
-                            <InputText name='name' type='text' label='Escriba su nombre' />
-                            <InputText name='email' type='email' label='Escriba su email' />
-                            <InputText name='phone' type='number' label='Escriba su telefono' />
-                            <Select name='location' label='Elija su ubicacion' >
+                            <InputText name='name' type='text' label='Escriba su nombre' className='contact-input' />
+                            <InputText name='email' type='email' label='Escriba su email' className='contact-input' />
+                            <InputText name='phone' type='number' label='Escriba su telefono' className='contact-input' />
+                            <Select name='location' label='Elija su ubicacion' className='contact-input' >
                                 <option value='' > Ninguna  </option>
                                 <option value='CABA' > CABA  </option>
                                 <option value='Zona Sur' > AMBA Zona Sur  </option>
@@ -71,8 +71,8 @@ const Contact = () => {
                                 <option value='Santa Fe' > Santa Fe  </option>
                                 <option value='Otro' > Otro </option>
                             </Select>
-                            <InputText name='message' type='text' label='Escriba el mensaje' className='form--input-message' />
-                            <button type='submit' className='form--submit'> Enviar </button>
+                            <InputText name='message' type='text' label='Escriba el mensaje' className='form--input-message' className='contact-input-mensaje' />
+                            <div className='submit-contact'><button type='submit' className='form--submit'> Enviar </button></div>
                         </Form>
                     </Formik>
                     <div className='msg--container' >
