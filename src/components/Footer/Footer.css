@@ -1,5 +1,7 @@
- .footer--inner--container{
+
+.footer--inner--container{
     background-color: rgb(20, 20, 20);
+    padding-bottom: 140px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;  
@@ -16,5 +18,14 @@
     color: #fff;
     margin-bottom: 50px; 
     font-size: 20px; 
-   
+   text-align: center;
+   vertical-align: top ;
+}
+
+@media (min-width: 750px) {
+    .footer--inner--container{
+        padding-bottom: 40%;
+
+    }
+    
 }

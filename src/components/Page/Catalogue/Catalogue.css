@@ -49,10 +49,11 @@ border-top-left-radius: 8%;
 
 
 .product--msg{
-    margin: 5px;
     font-size: 14px;
     font-weight: bolder;
+    padding: 15px;
 }
+
 /* Paginacion */
 
 .product--pagination--container{
@@ -124,9 +125,6 @@ border-top-left-radius: 8%;
     border-radius: 5px;
 }
 
-.product--msg{
-    margin: 5px;
-}
 .submit-catalogue{
     margin-top:10px;
     margin-bottom: 25px;

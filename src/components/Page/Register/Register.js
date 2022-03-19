@@ -89,7 +89,9 @@ const Register = () => {
                                 <InputText name='userName' label='Nombre de Usuario:' type='text' />
                                 <InputText name='email' label='Correo Electrónico:' type='email' />
                                 <InputText name='password' label='Contraseña:' type='password' />
+                                <div className='register-submit'>
                                 <button type='submit' className='form--submit register-button'>Registrarse</button>
+                                </div>
                             </Form>
                         </Formik>
                         <div className='msg--container' >

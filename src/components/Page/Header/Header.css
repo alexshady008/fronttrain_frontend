@@ -10,8 +10,8 @@
     position: fixed;
     z-index: 100;
     top: 0px;
-    border-bottom-right-radius: 10%;
-    border-top-right-radius: 10%;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
 
 }
 
@@ -105,7 +105,16 @@
         display:none !important;
   
     }
+
+    .header--active{
+        transition: none;
+    }
     
+    .header--inactive{ 
+        transition:none;
+    }
+    
+ 
     
 }
 
@@ -113,7 +122,7 @@
 
 
 .header--menu-button{
-    top:80%;
+    top:85%;
     left:75%;
     color:#fff;
     display:block;
@@ -127,7 +136,7 @@
 
 
 .header--wsp-button{
-    top:80%;
+    top:85%;
     left:2%;
     display:block;
     color:#fff;
