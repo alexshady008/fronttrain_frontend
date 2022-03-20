@@ -81,7 +81,7 @@ const ChangePrice = () => {
                                     <option value='locma' >Locma</option>
                                     <option value='borghetti' >Borghetti</option>
                                 </Select>
-                                <button type='submit' className='form--submit' >Actualizar precios</button>
+                               <div className='changePrice-submit'> <button type='submit' className='form--submit' >Actualizar precios</button></div>
                             </Form>
                     </Formik>
 

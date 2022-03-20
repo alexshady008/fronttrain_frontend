@@ -57,6 +57,7 @@
     
      .contact--container .form--container .contact-input-mensaje{
          min-height: 200px;
+         min-width: 600px;
      }
 
     }

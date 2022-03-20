@@ -19,7 +19,7 @@
 .product--container2{
    margin: 0 auto;
     background-color: #f1eded;
-    border-radius: 8%;
+    border-radius: 4%;
     width: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -30,8 +30,8 @@
     height: 100%;
 }
 .product--image {
-border-top-right-radius: 8%;
-border-top-left-radius: 8%;
+border-top-right-radius: 4%;
+border-top-left-radius: 4%;
 
 }
 

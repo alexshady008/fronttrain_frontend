@@ -26,6 +26,17 @@
     height: 100%;
 }
 
+.addProduct-submit{
+    width: 100%;
+}
+
+.productFormAdd--container .form--container{
+   flex-direction: row;
+   width: 50%;
+   margin: auto;
+   justify-content:space-evenly;
+}
+
 /* Preview Product */
 .preview--container{
     margin: 10px;

@@ -10,10 +10,18 @@
     }
 
   .select--admin{
-     margin: 10px auto;
+     /* margin: auto; */
+  }
+.changePrice-submit{
+    width: 100%;
+}
+  .changePrice-form , .input--container{
+   margin: auto;
   }
 
-  .changePrice-form , .input--container{
-      margin: 10px;
+  .changePrice .changePrice-form{
+      flex-direction: row;
+    width: 55%;
+      
   }
 }
