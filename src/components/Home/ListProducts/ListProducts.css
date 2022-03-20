@@ -1,6 +1,6 @@
  
     .listProducts--container{
-     margin-top: 100px;
+     margin-top: 80px;
 
     }
     
@@ -22,4 +22,8 @@
 
     .product--button{
         margin: 5px;
+    }
+
+    .productFilter--container .form--container{
+        justify-content: center;
     }

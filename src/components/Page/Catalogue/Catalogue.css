@@ -220,3 +220,10 @@ height: 100%;
            width: 50%;
          }
         }
+
+    @media (min-width: 1690px) {
+
+     .productFilter--container .form--container  {
+         width:35%;
+         }
+        }

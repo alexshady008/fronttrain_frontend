@@ -9,19 +9,16 @@
         font-size: 35px;
     }
 
-  .select--admin{
-     /* margin: auto; */
-  }
 .changePrice-submit{
     width: 100%;
 }
-  .changePrice-form , .input--container{
-   margin: auto;
-  }
+
 
   .changePrice .changePrice-form{
-      flex-direction: row;
-    width: 55%;
-      
+      /* flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: auto;
+      justify-content: center; */
   }
 }

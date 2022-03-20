@@ -2,11 +2,12 @@
 .register{
     margin-top: 20px;
   }
-
+  
   .register--container{
     margin-top: 20px;
+    margin-bottom: 65px;
   }
-
+  
   .register-container h1{
     margin: 30px;
   }
@@ -16,7 +17,9 @@
     margin: 10px;
   }
 
-
+.register .form--container{
+  flex-wrap: nowrap;
+}
 @media (min-width: 750px) {
   .login-container{
       margin-top: 135px;

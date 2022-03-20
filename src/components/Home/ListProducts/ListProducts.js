@@ -6,7 +6,7 @@ const ListProducts = () => {
 
     return(
         <main className='main-container  listProducts--container'>
-            <h1 >Productos</h1>
+            {/* <h1 >Productos</h1> */}
             <ProductFilter />
             <Products />
         </main>

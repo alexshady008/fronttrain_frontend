@@ -64,7 +64,7 @@ const ChangePrice = () => {
                                     <option value='desc' >Descuento</option>
                                 </Select>
                                 <InputText name='amount' type='number' label='Ingresar tipo cantidad de Porcentaje' />
-                                <Select name='productType' label='Categoria de producto que se modificarán los precios' >
+                                <Select name='productType' label='Categoria de producto' >
                                     <option value='' >Elegir Categoria</option>
                                     <option value='1' >Bujes</option>
                                     <option value='2' >Rotulas</option>
@@ -73,7 +73,7 @@ const ChangePrice = () => {
                                     <option value='5' >Bieletas</option>
                                     <option value='6' >Parrillas</option>
                                 </Select>
-                                <Select name='productBrand' label='Marca de Producto que se modificarán los precios' >
+                                <Select name='productBrand' label='Marca de Producto'  >
                                     <option value='' >Elegir marca</option>
                                     <option value='icsa' >ICSA</option>
                                     <option value='gomet' >Gomet</option>
